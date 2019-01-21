@@ -1,0 +1,301 @@
+/*------------------------------------------------*/
+/*  BASIC SETUP */
+/*------------------------------------------------*/
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff; 
+    color: #555;
+    font-family: 'Consolas', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*------------------------------------------------*/
+/*  REUSABLE COMPONENETS */
+/*------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0; 
+}
+
+
+h1,
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    color: #fff;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: 'Elephant';
+    color: #992600;
+}
+
+h2:after {
+    display: block;
+    background-color: #1a1aff;
+    height: 2px;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+/* -----PARAGRAPHS----- */
+
+.about-me {
+    line-height: 145%;
+    width: 78%;
+    margin-left: 15%;
+}
+
+
+
+/*------------------------------------------------*/
+/*  HEADER */
+/*------------------------------------------------*/
+   
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+}
+
+.main-nav {
+    float: left;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+float:left;
+    margin-left: 90px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 95%;
+    font-weight: bold;
+font-family:'Cooperplate gothic bold';
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #1a1aff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 0;
+    box-shadow: 0 2px 2px #efefef;
+    
+}
+
+.main-nav {
+    
+    margin-top: 15px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 12px 0;
+    color: #555;
+    
+    
+}
+/*------------------------------------------------*/
+/*  SKILLS */
+/*------------------------------------------------*/
+
+
+.skills {
+    padding: 0;
+}
+
+.skills-showcase {
+    list-style: none;
+    width:100%;
+}
+
+.skills-showcase li {
+    display: block;
+    float:left;
+    width: 33.33%;
+}
+
+.skill-photo {
+    width: 85%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+    
+}
+
+.skill-photo img {
+    opacity: 0.6;
+padding-left: 30%;
+    width: 85%;
+text-align: center;
+    height: auto;
+    transform: scale(1.1);
+    transition: transform 0.6s, opacity 0.6s;
+}
+
+.skill-photo img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+
+/*------------------------------------------------*/
+/*  Education */
+/*------------------------------------------------*/
+
+.education {
+    background-color: #f4f4f4;
+}
+
+.edu-box:first-child {
+    text-align: left;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.edu-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+
+    
+
+.academics {
+    margin-bottom: 50px;
+}
+
+.academics div {
+    color: #1a1aff;
+    border: 2px solid #1a1aff;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+     
+}
+
+/*------------------------------------------------*/
+/*  Education */
+/*------------------------------------------------*/
+
+.pro-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.pro-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+
+
+.pro {
+    margin-bottom: 50px;
+}
+
+.pro div {
+    color: #1a1aff;
+    border: 2px solid #1a1aff;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float:left;
+    font-size: 150%;
+    margin-right: 25px;
+     
+}
+
+
+/*------------------------------------------------*/
+/*  footer */
+/*------------------------------------------------*/
+
+footer {
+    background-color:  #333;
+    padding: 5%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left
+}
+.footer-nav li{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    
+}
